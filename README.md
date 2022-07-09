@@ -1,1 +1,0 @@
-# nck_task
