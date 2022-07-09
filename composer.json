@@ -1,0 +1,19 @@
+{
+    "name": "vendor/inventory_app",
+    "description": "\"this inventory app is a task given by NCK Task\"",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Vendor\\InventoryApp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Emmanuel Onyo",
+            "email": "emmanuelonyo34@gmail.com"
+        }
+    ],
+    "require": {
+        "firebase/php-jwt": "^6.2"
+    }
+}
