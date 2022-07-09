@@ -1,3 +1,3 @@
-<center>
+<h1 style="text-align: center">
 FAVOUR RETAIL APP DOCUMENTATION 
-</center>
+</h1>
