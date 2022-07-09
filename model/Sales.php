@@ -25,13 +25,14 @@ class Sales{
                         ON cart.product_id = products.id
                         JOIN categories
                         ON products.categorie_id = categories.id
-                        ";
+                        WHERE user_id = :user_id";
+            $arr['user_id'] = $this->user_id;
             
-            $data = $this->conn->read($stmt);
+            $data = $this->conn->read($stmt,$arr);
 
             if(is_array($data)){
 
-                return msg(0,200,"Cart Retrieved Successful",$data);
+                return msg(1,200,"Cart Retrieved Successful",$data);
                 
             }else{
 
@@ -103,7 +104,7 @@ class Sales{
 
                 if($addtocart){
 
-                    return msg(0,500,"Product has been added to cart successfuly", $add_arr);
+                    return msg(1,200,"Product has been added to cart successfuly", $add_arr);
                 }else{
 
                     return msg(0,500,"Oops! Somthing Went Wrong");

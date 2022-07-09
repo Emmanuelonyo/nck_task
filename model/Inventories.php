@@ -48,7 +48,7 @@
 
                 if($insert){
                 
-                    return msg(0,200,"Product Created Successfuly");
+                    return msg(1,200,"Product Created Successfuly");
     
                 }else{
                     return msg(0,500,"Oops! Somthing Went Wrong");
@@ -104,7 +104,7 @@
             
                             if($insert){
                             
-                                return msg(0,200,"Product Updated Successfuly");
+                                return msg(1,200,"Product Updated Successfuly");
                 
                             }else{
                                 return msg(0,500,"Oops! Somthing Went Wrong");
@@ -131,7 +131,7 @@
                             ";
                 $data = $this->conn->read($stmt);
 
-                return msg(0,200,"Products Retrieved Successful",$data);
+                return msg(1,200,"Products Retrieved Successful",$data);
 
 
             }catch(\Throwable $e){
@@ -172,7 +172,7 @@
 
                 if($delete){
                 
-                    return msg(0,200,"Product Deleted Successfuly");
+                    return msg(1,200,"Product Deleted Successfuly");
     
                 }else{
                     return msg(0,500,"Opps! Somthing Went wrong");
